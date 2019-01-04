@@ -5,13 +5,17 @@
 
 Pod::Spec.new do |s|
     s.name         = 'wyyCommon'
-    s.version      = '1.0.1'
+    s.version      = '1.0.2'
     s.summary      = 'a common component'
+    s.description  = <<-DESC
+                    私有Pods测试
+                    * Markdown 格式
+                   DESC
     s.homepage     = 'https://github.com/wyytai/wyyTools'
     s.license      = 'MIT'
     s.authors      = { 'wyytai' => 'wyytai@qq.com' }
     s.platform     = :ios, '8.0'
-    s.framework = "UIKit"
+    s.framework = "UIKit","Foundation"
     s.source       = { :git => 'https://github.com/wyytai/wyyTools.git', :tag => s.version }
     s.requires_arc = true
     s.source_files = 'Common/wyyCommon/VDCommon.h'
@@ -39,5 +43,6 @@ end
 # pod lib lint wyyCommon.podspec --allow-warnings
 
 # pod trunk push wyyCommon.podspec --allow-warnings
+# pod lib lint wyyCommon.podspec --verbose(依赖库) 有错误提示时 用这个吧，记得添加依赖
 
 
