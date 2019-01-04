@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
     s.summary      = 'a common component'
     s.description  = <<-DESC
                     私有Pods测试
-                    * Markdown 格式
+                    * sd 格式
                    DESC
     s.homepage     = 'https://github.com/wyytai/wyyTools'
     s.license      = 'MIT'
