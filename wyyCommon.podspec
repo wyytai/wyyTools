@@ -44,5 +44,12 @@ end
 
 # pod trunk push wyyCommon.podspec --allow-warnings
 # pod lib lint wyyCommon.podspec --verbose(依赖库) 有错误提示时 用这个吧，记得添加依赖
+# 如果有引用到库framwork或C语言库的话必须使用
+
+# pod spec lint wyyCommon.podspec --use-libraries // 验证
+
+# pod trunk push wyyCommon.podspec --use-libraries           // 上传
+
+
 
 
